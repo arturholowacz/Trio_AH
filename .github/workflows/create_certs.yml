@@ -4,6 +4,7 @@ run-name: Create Certificates (${{ github.ref_name }})
 on: [workflow_call, workflow_dispatch]
 
 env:
+  ENABLE_NUKE_CERTS: "true"
   TEAMID: ${{ secrets.TEAMID }}
   GH_PAT: ${{ secrets.GH_PAT }}
   GH_TOKEN: ${{ secrets.GH_PAT }}
